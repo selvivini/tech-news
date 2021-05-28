@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface VoteRepository extends JpaRepository<Vote, Integer> {
-    @Query("SELECT COUNT(*) FROM vote v WHERE v.postId = :id ")
+    @Query("SELECT COUNT(*) FROM Vote v WHERE v.postId = :id ")
     int countVotesByPostId(@Param("id") Integer id ) ;
 
 }

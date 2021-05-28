@@ -23,7 +23,7 @@ private String password;
 @Transient
 boolean loggedIn;
 @OneToMany(mappedBy = "userId", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-private List<Post> posts;
+private List<Posts> posts;
 @OneToMany(mappedBy = "userId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 private List<Vote> votes;
 @OneToMany(mappedBy = "userId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
@@ -76,11 +76,11 @@ private List<Comment> comments;
         this.loggedIn = loggedIn;
     }
 
-    public List<Post> getPosts() {
+    public List<Posts> getPosts() {
         return posts;
     }
 
-    public void setPosts(List<Post> posts) {
+    public void setPosts(List<Posts> posts) {
         this.posts = posts;
     }
 
