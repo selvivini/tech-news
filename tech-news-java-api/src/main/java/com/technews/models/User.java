@@ -29,7 +29,7 @@ private List<Vote> votes;
 @OneToMany(mappedBy = "userId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 private List<Comment> comments;
 
-    public User(Integer id, String username, String email, String password) {
+    public User() {
         this.id = id;
         this.username = username;
         this.email = email;

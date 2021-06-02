@@ -35,7 +35,7 @@ public class Posts implements Serializable {
     @OneToMany(mappedBy = "postId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Comment> comments;
 
-    public Posts(Integer id, String title, String postUrl, String userName, int voteCount, Integer userId) {
+    public Posts() {
         this.id = id;
         this.title = title;
         this.postUrl = postUrl;
