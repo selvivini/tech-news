@@ -13,5 +13,9 @@ articles and link that they wish to go and look at it later. The info gets store
  * Insomnia for testing the routes
  
  ## Screenshots
+ ![landingPage](tech-news-java-api/src/main/resources/static/assets/landingpage.PNG)
+ ![signup](tech-news-java-api/src/main/resources/static/assets/signup.PNG)
+ ![login](tech-news-java-api/src/main/resources/static/assets/login.PNG)
+ ![dashboard](tech-news-java-api/src/main/resources/static/assets/dashboard.PNG)
  
 
